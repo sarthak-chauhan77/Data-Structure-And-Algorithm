@@ -1,5 +1,13 @@
 package Arrays;
-
+/*
+Q. Given a 1-indexed array of integers numbers that is already in non-decreasing order.
+   find two numbers such that they add up  to  a specific target number.Let these two numbers
+   be numbers[index1] and numbers[index2] where i<= index1 < index2 <= numbers.length.
+   Return the indices of the two numbers index1 and index2, odded by one as an integer array[index1,index2]
+   of length 2.
+   Note -> the test are generated such that there is exactly one solution oyu may not use the same 
+   element twice.
+ */
 public class TwoSum {
     private static int[] twoSum(int[] arr, int target) {
         int i = 0;
