@@ -2,6 +2,7 @@ package LinkedList;
 
 public class deletionInList {
     Node head;
+    private int size = 0;
 
     class Node {
         String data;
@@ -10,6 +11,7 @@ public class deletionInList {
         Node(String data) {
             this.data = data;
             this.next = null;
+            size++;
         }
 
     }
@@ -45,6 +47,7 @@ public class deletionInList {
             System.out.println("The list is empty ");
             return;
         }
+        size--;
         head = head.next;
     }
 
@@ -53,6 +56,7 @@ public class deletionInList {
             System.out.println("The list is empty ");
             return;
         }
+        size--;
         if (head.next == null) {
             head = null;
             return;
@@ -76,6 +80,10 @@ public class deletionInList {
         System.out.print("Null");
     }
 
+    public int getSize() {
+        return size;
+    }
+
     public static void main(String[] args) {
         deletionInList list = new deletionInList();
         list.addFirst("a");
@@ -83,9 +91,11 @@ public class deletionInList {
         list.addFirst("This");
         list.addLast("Linked List");
         list.printList();
+        System.out.println("\n Size of  list is " + list.getSize());
         list.deleteFirst();
         list.deleteLast();
         System.out.println();
         list.printList();
+        System.out.println("\n Size of  list is " + list.getSize());
     }
 }
