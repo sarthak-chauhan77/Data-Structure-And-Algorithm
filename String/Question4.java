@@ -1,4 +1,5 @@
 package String;
+//Q. find the permutations of the string
 
 public class Question4 {
 
