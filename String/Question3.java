@@ -1,5 +1,5 @@
 package String;
-
+//Q. check that the strings are paregram or not 
 public class Questin3 {
     public static boolean areAnagrams(String str1, String str2) {
         // If the lengths of both strings are not equal, they can't be anagrams
