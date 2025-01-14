@@ -1,5 +1,5 @@
 package String;
-
+//Q. reverse the string 
 public class Questin2 {
 
     public void reverseString(String str) {
